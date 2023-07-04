@@ -31,7 +31,7 @@ class CategoryScreen extends StatelessWidget {
                     color: Colors.white)),
           ),
           Positioned(
-            top: 120,
+            top: 110,
             bottom: 0,
             left: 0,
             right: 0,
@@ -234,7 +234,7 @@ class CategoryScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 87,
+            top: 75,
             child: Column(
               children: [
                 Image.asset(
