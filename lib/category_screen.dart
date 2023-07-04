@@ -22,13 +22,17 @@ class CategoryScreen extends StatelessWidget {
         ],
       ),
       body: Container(
-        child: const Column(children: [
-          Text(
-            "PULSE 3D \nWireless Headset ",
-            style: TextStyle(
-                fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
-          )
-        ]),
+        child: const Column(
+          children: [
+            Text(
+              "PULSE 3D \nWireless Headset ",
+              style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
       ),
     );
   }
