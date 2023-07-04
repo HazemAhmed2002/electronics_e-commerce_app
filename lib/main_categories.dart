@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'new/card_shoping.dart';
-import 'new/categories_home.dart';
-import 'new/profile_screen.dart';
+import 'view/card_shoping.dart';
+import 'view/categories_home.dart';
+import 'view/profile_screen.dart';
 
 class MainCategoriesScreen extends StatefulWidget {
   const MainCategoriesScreen({super.key});
