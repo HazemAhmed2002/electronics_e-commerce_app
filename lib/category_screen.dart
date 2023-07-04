@@ -7,7 +7,7 @@ class CategoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("< PS5", style: TextStyle(color: Colors.white)),
+        title: const Text("< PS5", style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
             onPressed: () {},
@@ -261,7 +261,7 @@ class CategoryScreen extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.favorite_border),
+                    icon: const Icon(Icons.favorite_border),
                     color: Colors.white,
                   ),
                   const SizedBox(width: 10),
@@ -275,9 +275,9 @@ class CategoryScreen extends StatelessWidget {
                         onTap: () {
                           // Get.snackbar("Add To Cart", "Button Clicked");
                         },
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Icon(
                               Icons.add_shopping_cart_outlined,
                               color: Colors.white,
