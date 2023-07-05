@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CategoryScreen extends StatelessWidget {
-  const CategoryScreen({super.key});
+class CategoryScreen extends StatefulWidget {
+  CategoryScreen({super.key});
+
+  @override
+  State<CategoryScreen> createState() => _CategoryScreenState();
+}
+
+class _CategoryScreenState extends State<CategoryScreen> {
+  bool favoriteSelected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +115,7 @@ class CategoryScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(
-                      height: 107,
+                      height: 70,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -259,9 +266,15 @@ class CategoryScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(
-                    onPressed: () {},
+                  IconButton.outlined(
+                    isSelected: favoriteSelected,
+                    onPressed: () {
+                      setState(() {
+                        favoriteSelected = !favoriteSelected;
+                      });
+                    },
                     icon: const Icon(Icons.favorite_border),
+                    selectedIcon: const Icon(Icons.favorite, color: Colors.red),
                     color: Colors.white,
                   ),
                   const SizedBox(width: 10),
@@ -272,9 +285,7 @@ class CategoryScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(16),
                           color: const Color(0XFF454D5A)),
                       child: GestureDetector(
-                        onTap: () {
-                          // Get.snackbar("Add To Cart", "Button Clicked");
-                        },
+                        onTap: () {},
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
