@@ -1,4 +1,5 @@
-import 'package:electronics_ecommerce/category_screen.dart';
+import 'package:electronics_ecommerce/main_categories.dart';
+import 'package:electronics_ecommerce/view_products_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: CategoryScreen(),
+      home: MainCategoriesScreen(),
     );
   }
 }

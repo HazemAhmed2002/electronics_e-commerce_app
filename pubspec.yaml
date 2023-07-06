@@ -66,6 +66,12 @@ flutter:
     - images/ps5-photo.png
     - images/PS5HEADSETW.png
     - images/filters.png
+    - images/wireless_headset.png
+    - images/bread_loaf_2.png
+    - images/bread_loaf.png
+    - images/media_remote.png
+    - images/ps5_1.png
+    - images/ps5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
