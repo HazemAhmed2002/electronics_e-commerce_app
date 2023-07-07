@@ -24,14 +24,6 @@ class _MainCategoriesScreenState extends State<MainCategoriesScreen> {
     const ProfileScreen(),
   ];
 
-  List<String> items = [
-    "All",
-    "PS5",
-    "PS4",
-    "Xbox One",
-    "Xbox One x",
-  ];
-
   int index = 0;
 
   void changeValueOfIndex(int value) {
