@@ -39,6 +39,7 @@ class _CategoriesHomeScreenState extends State<CategoriesHomeScreen> {
   }
 
   PageController pageController = PageController();
+  bool favoriteSelected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -140,13 +141,21 @@ class _CategoriesHomeScreenState extends State<CategoriesHomeScreen> {
                                               width: 193.0,
                                             ),
                                             IconButton(
-                                                onPressed: null,
-                                                icon: IconButton(
-                                                  icon: const Icon(
-                                                      Icons.favorite_border),
-                                                  color: Colors.grey[400],
-                                                  onPressed: () {},
-                                                ))
+                                              isSelected: favoriteSelected,
+                                              onPressed: () {
+                                                setState(() {
+                                                  favoriteSelected =
+                                                      !favoriteSelected;
+                                                });
+                                              },
+                                              icon: const Icon(
+                                                  Icons.favorite_border,
+                                                  color: Colors.white),
+                                              selectedIcon: const Icon(
+                                                Icons.favorite,
+                                                color: Colors.red,
+                                              ),
+                                            )
                                           ],
                                         ),
                                         Text(

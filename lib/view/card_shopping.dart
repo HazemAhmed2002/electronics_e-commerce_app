@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class CardShoppingScreen extends StatelessWidget {
+  const CardShoppingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
         child: Text(
-          "Profile Screen",
+          "Card Shopping",
           style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),

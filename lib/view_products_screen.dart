@@ -11,13 +11,13 @@ class ViewProductsScreen extends StatelessWidget {
       backgroundColor: const Color(0XFF333742),
       appBar: AppBar(
         backgroundColor: const Color(0xff333742),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
-        ),
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: const Icon(
+        //     Icons.menu,
+        //     color: Colors.white,
+        //   ),
+        // ),
         actions: [
           Padding(
               padding: const EdgeInsets.only(right: 8),

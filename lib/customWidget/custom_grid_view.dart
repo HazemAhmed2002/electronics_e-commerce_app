@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
+import '../category_screen.dart';
 
 class CustomGridView extends StatefulWidget {
   CustomGridView({
@@ -122,7 +123,12 @@ class _NewWidgetState extends State<CustomGridView> {
                 borderRadius: BorderRadius.circular(10),
                 color: const Color(0xff333742)),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CategoryScreen()),
+                );
+              },
               icon: const Icon(Icons.shopping_cart),
               color: Colors.white,
               iconSize: 16,
@@ -132,7 +138,7 @@ class _NewWidgetState extends State<CustomGridView> {
         const Positioned(
           top: 50,
           child: Image(
-            image: AssetImage('images/wireless_headset.png'),
+            image: AssetImage('images/ps5.png'),
             height: 140,
             width: 140,
           ),

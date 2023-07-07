@@ -1,6 +1,7 @@
+import 'package:electronics_ecommerce/view_products_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'view/card_shoping.dart';
+import 'view/card_shopping.dart';
 import 'view/categories_home.dart';
 import 'view/profile_screen.dart';
 
@@ -14,13 +15,13 @@ class MainCategoriesScreen extends StatefulWidget {
 class _MainCategoriesScreenState extends State<MainCategoriesScreen> {
   List<String> title = [
     "Categories",
-    "CardShoping",
+    "CardShopping",
     "Profile",
   ];
 
   List<Widget> screen = [
     const CategoriesHomeScreen(),
-    const CardShopingScreen(),
+    const CardShoppingScreen(),
     const ProfileScreen(),
   ];
 
@@ -39,11 +40,19 @@ class _MainCategoriesScreenState extends State<MainCategoriesScreen> {
       appBar: AppBar(
         backgroundColor: const Color(0xff333742),
         leading: const Icon(Icons.menu, color: Colors.white),
-        actions: const [
+        actions: [
           Padding(
-            padding: EdgeInsets.only(right: 20),
-            child: Icon(Icons.notification_add_rounded, color: Colors.white),
-          )
+              padding: EdgeInsets.only(right: 20),
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ViewProductsScreen()),
+                  );
+                },
+                icon: Icon(Icons.notification_add_rounded, color: Colors.white),
+              ))
         ],
         centerTitle: false,
         elevation: 0,
@@ -79,7 +88,7 @@ class _MainCategoriesScreenState extends State<MainCategoriesScreen> {
               ),
               GButton(
                 icon: Icons.shopify,
-                text: "CardShoping",
+                text: "CardShopping",
               ),
               GButton(
                 icon: Icons.person,

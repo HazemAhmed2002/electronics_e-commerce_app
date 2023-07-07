@@ -1,3 +1,4 @@
+import 'package:electronics_ecommerce/view/category_details.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatefulWidget {
@@ -14,10 +15,16 @@ class _CategoryScreenState extends State<CategoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("< PS5", style: TextStyle(color: Colors.white)),
+        title: const Text("PS5", style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => CategoryDetailsScreen()),
+              );
+            },
             icon: const Icon(Icons.share),
             color: Colors.white,
           )
